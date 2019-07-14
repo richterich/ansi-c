@@ -10,3 +10,4 @@ project(ANSI-C C)
 
 add_subdirectory(exercise_1_1)
 add_subdirectory(exercise_1_2)
+add_subdirectory(exercise_1_3)
