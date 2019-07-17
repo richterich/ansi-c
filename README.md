@@ -1,7 +1,7 @@
 # ANSI C
 
-[![Build Status](https://concourse.hellofreak.pp.ua/api/v1/teams/main/pipelines/publishing-outputs/jobs/job-bump-date/badge)](https://concourse.hellofreak.pp.ua/teams/main/pipelines/publishing-outputs)
-[![License](https://img.shields.io/github/license/Rihtarich/ansi-c.svg)](LICENSE.md)
+[![Build Status](https://concourse.hellofreak.pp.ua/api/v1/teams/main/pipelines/ansi-c/jobs/build/badge)](https://concourse.hellofreak.pp.ua/teams/main/pipelines/ansi-c)
+[![License](https://img.shields.io/github/license/Rihtarich/ansi-c.svg?style=popout)](LICENSE.md)
 [![Hits-of-Code](https://hitsofcode.com/github/Rihtarich/ansi-c)](https://hitsofcode.com/view/github/Rihtarich/ansi-c)
 
 The exercises are taken from the book `The C Programming Language`.
