@@ -139,8 +139,7 @@ Options:
 
 ## Deployment
 
-After fetch this repository pass into root of repository.
-Create following folders:
+After fetch this repository create following folders at the same level:
 - A `build` folder for cmake generate files.
 - A `bin` folder for instalation of executable files.
 
@@ -149,7 +148,7 @@ Create following folders:
 Pass into the folder `build`.
 Type the following command in the terminal to generate files for `Make`:
 ```bash
-$ cmake ..
+$ cmake ../ansi-c
 ```
 Type the following command in the terminal to build from `Makefile`:
 ```bash
@@ -162,7 +161,7 @@ Open Developer Command Prompt for example, `x86_64 Cross Tools Command Prompt fo
 Pass into the folder `build` from opened command prompt.
 Type the following command in the terminal to generate files for `NMake`:
 ```pwsh
-> cmake .. -G "NMake Makefiles"
+> cmake ..\ansi-c -G "NMake Makefiles"
 ```
 Type the following command in the terminal to build from `Makefile`:
 ```pwsh
