@@ -20,3 +20,9 @@ _deps
 
 bin
 build
+
+################
+# IDE's Folder #
+################
+
+.vscode
