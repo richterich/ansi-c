@@ -29,12 +29,12 @@ Check your software for your operating system.
 
 ###### Linux
 
-You should install the `TCC`.
-For example, you will type a following command in a terminal if you use package manager `pacman`:
+You should install `TCC`.
+For example, you will enter the following command in terminal if you use package manager `pacman`:
 ```bash
 $ sudo pacman -S tcc
 ```
-To check the `TCC` version type `$ tcc -vv` in a terminal.
+To check version of `TCC` enter `$ tcc -vv` in terminal.
 The output of the command would be something like this:
 ```bash
 tcc version 0.9.27 (x86_64 Linux)
@@ -55,12 +55,12 @@ elfinterp:
   /lib64/ld-linux-x86-64.so.2
 ```
 
-You should install the `CMake`.
-For example, you will type a following command in a terminal if you use package manager `pacman`:
+You should install `CMake`.
+For example, you will enter the following command in terminal if you use package manager `pacman`:
 ```bash
 $ sudo pacman -S cmake
 ```
-To check the `CMake` version type `$ cmake --version` in a terminal.
+To check version of `CMake` enter `$ cmake --version` in terminal.
 The output of the command would be something like this:
 ```bash
 cmake version 3.14.5
@@ -68,16 +68,16 @@ cmake version 3.14.5
 CMake suite maintained and supported by Kitware (kitware.com/cmake).
 ```
 
-You should install the `Make`.
-For example, you will type a following command in a terminal if you use `Arch Linux`:
+You should install `Make`.
+For example, you will enter the following command in terminal if you use `Arch Linux`:
 ```bash
 $ sudo pacman -S base-devel
 ```
-But, you would type a following command in a terminal if you want to install `Make` directly:
+But, you should enter other command in terminal if you want to install `Make` directly:
 ```bash
 $ sudo pacman -S make
 ```
-To check the `Make` version type `$ make --version` in a terminal.
+To check version of `Make` enter `$ make --version` in terminal.
 The output of the command would be something like this:
 ```bash
 GNU Make 4.2.1
@@ -90,10 +90,10 @@ There is NO WARRANTY, to the extent permitted by law.
 
 ###### Windows
 
-You should install the `TCC`.
+You should install `TCC`.
 You can download binary from [TCC offical site](https://bellard.org/tcc/) and install it.
 After installation `TCC` you should add a path to `tcc.exe` to the system variable `PATH`.
-To check the `TCC` version type `> tcc -vv` in a command prompt.
+To check version of `TCC` enter `> tcc -vv` in command prompt.
 The output of the command would be something like this:
 ```pwsh
 tcc version 0.9.27 (x86_64 Windows)
@@ -108,10 +108,10 @@ libtcc1:
   c:/tcc/libtcc1-64.a
 ```
 
-You should install the `CMake`.
+You should install `CMake`.
 You can download binary from [CMake offical site](https://cmake.org/) and install it.
 After installation `CMake` you should add a path to `cmake.exe` to the system variable `PATH`.
-To check the `CMake` version type `> cmake --version` in a command prompt.
+To check version `CMake` enter `> cmake --version` in command prompt.
 The output of the command would be something like this:
 ```pwsh
 cmake version 3.15.0-rc2
@@ -119,12 +119,12 @@ cmake version 3.15.0-rc2
 CMake suite maintained and supported by Kitware (kitware.com/cmake).
 ```
 
-You should install the `NMake`.
+You should install `NMake`.
 `The Microsoft Program Maintenance Utility (NMAKE.EXE) is a command-line tool included with Visual Studio ...`
 So, you can download the [Visual Studio Community](https://visualstudio.microsoft.com/vs/community/) and install it.
 After installation Visual Studio Community you may install only `MSVC` component.
 Now, you should open Developer Command Prompt for example, `x86_64 Cross Tools Command Prompt for VS 2019`.
-To see the `NMake` help type `> nmake /?` in an opened command prompt.
+To see help for `NMake` enter `> nmake /?` in the opened command prompt.
 The output of the command would be something like this:
 ```pwsh
 Microsoft (R) Program Maintenance Utility Version 14.21.27702.2
@@ -140,17 +140,17 @@ Options:
 ## Deployment
 
 After fetch this repository create following folders at the same level:
-- A `build` folder for cmake generate files.
+- A `build` folder for cmake generated files ([Out-of-source build trees](https://gitlab.kitware.com/cmake/community/-/wikis/FAQ#out-of-source-build-trees)).
 - A `bin` folder for instalation of executable files.
 
 ###### Linux
 
 Pass into the folder `build`.
-Type the following command in the terminal to generate files for `Make`:
+Type the following command in terminal to generate files for `Make`:
 ```bash
 $ cmake ../ansi-c
 ```
-Type the following command in the terminal to build from `Makefile`:
+Type the following command in terminal to build from `Makefile`:
 ```bash
 $ make
 ```
@@ -159,11 +159,11 @@ $ make
 
 Open Developer Command Prompt for example, `x86_64 Cross Tools Command Prompt for VS 2019`.
 Pass into the folder `build` from opened command prompt.
-Type the following command in the terminal to generate files for `NMake`:
+Type the following command in terminal to generate files for `NMake`:
 ```pwsh
 > cmake ..\ansi-c -G "NMake Makefiles"
 ```
-Type the following command in the terminal to build from `Makefile`:
+Type the following command in terminal to build from `Makefile`:
 ```pwsh
 > nmake
 ```
