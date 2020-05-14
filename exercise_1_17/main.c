@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-#define MAXLINE 1000
-#define BOUNDARY 80
+#define MAXLINE 1000 	/* maximum input line size */
+#define BOUNDARY 80		/* minimum input line size */
 
 int getLine(char[], int);
 void copy(char[], char[]);
