@@ -5,8 +5,8 @@
 int getLine(char[], int);
 int trimEnd(char[], int);
 
-/* prints input lines that are
- * longer than 80 characters */
+/* removes trailing blanks and tabs
+ * from each line of input */
 main()
 {
     int len;            /* current line length */
