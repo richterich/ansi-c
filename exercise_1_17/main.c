@@ -13,7 +13,7 @@ main()
 	int len;			/* current line length */
 	char line[MAXLINE];	/* current input line */
 	while ((len=getLine(line,MAXLINE)) > 0) {
-		if (len >= BOUNDARY) {
+		if (len > BOUNDARY) {
 			printf("count: %d\nstring: %s", len, line);
 		}
 	}
@@ -30,8 +30,7 @@ int getLine(char s[], int lim)
 	}
 	if (c == '\n') {
 		s[i] = c;
-		++i;
 	}
-	s[i] = '\0';
+	s[i+1] = '\0';
 	return i;
 }
